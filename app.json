@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "weathercast",
+    "name": "weather Cast",
     "slug": "weathercast",
+    "privacy": "public",
+    "description": "This app is providing easy to understand the current weather",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

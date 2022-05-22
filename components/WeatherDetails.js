@@ -22,7 +22,7 @@ export default function WeatherDetails({ currentWeather,unitsSystem }) {
         <FontAwesome5 name="temperature-low" size={25} color={PRIMARY_COLOR}/>
         <View style={styles.weatherDetailsItems}>
         <Text>Feels like :</Text>
-          <Text style={styles.textSecondary}>{feels_like}</Text>
+          <Text style={styles.textSecondary}>{feels_like}°</Text>
 
         </View>
         
@@ -33,7 +33,7 @@ export default function WeatherDetails({ currentWeather,unitsSystem }) {
         <MaterialCommunityIcons name="water" size={30} color={PRIMARY_COLOR}/>
         <View style={styles.weatherDetailsItems}>
         <Text>Humidity :</Text>
-          <Text style={styles.textSecondary}>{humidity}</Text>
+          <Text style={styles.textSecondary}>{humidity}%</Text>
 
         </View>
         
@@ -42,10 +42,10 @@ export default function WeatherDetails({ currentWeather,unitsSystem }) {
       </View>
 
 
-      <View style={styles.weatherDetailsRow}>
+      <View style={{...styles.weatherDetailsRow, borderTopWidth: 1, borderTopColor: BORDER_COLOR}}>
         <View style={{ ...styles.weatherDetailsBox, borderRightWidth:1 , borderRightColor: BORDER_COLOR}}>
         <View style={styles.weatherDetailsRow}>
-        <FontAwesome5 name="temperature-low" size={25} color={PRIMARY_COLOR}/>
+        <MaterialCommunityIcons name="weather-windy" size={25} color={PRIMARY_COLOR}/>
         <View style={styles.weatherDetailsItems}>
         <Text>Wind Speed :</Text>
           <Text style={styles.textSecondary}>{windSpeed}</Text>
@@ -56,10 +56,10 @@ export default function WeatherDetails({ currentWeather,unitsSystem }) {
         </View>
         <View style={styles.weatherDetailsBox}>
         <View style={styles.weatherDetailsRow}>
-        <MaterialCommunityIcons name="water" size={30} color={PRIMARY_COLOR}/>
+        <MaterialCommunityIcons name="speedometer" size={30} color={PRIMARY_COLOR}/>
         <View style={styles.weatherDetailsItems}>
         <Text>Pressure :</Text>
-          <Text style={styles.textSecondary}>{pressure}</Text>
+          <Text style={styles.textSecondary}>{pressure} hPa</Text>
 
         </View>
         

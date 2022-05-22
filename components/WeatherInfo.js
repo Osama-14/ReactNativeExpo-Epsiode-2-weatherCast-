@@ -16,7 +16,7 @@ export default function WeatherInfo({ currentWeather }) {
   const iconUrl = `https://openweathermap.org/img/wn/${icon}@4x.png`;
   return (
     <View style={styles.WeatherInfo}>
-      <Text>{name}</Text>
+      <Text style={styles.cityName}>{name}</Text>
       <Image style={styles.WeatherIcon} source={{ uri: iconUrl }} />
       <Text style={styles.textPrimary}>{temp}°</Text>
       <Text style={styles.weatherdescription}>{description}</Text>
@@ -47,6 +47,12 @@ const styles = StyleSheet.create({
       color: SECONDARY_COLOR,
       fontWeight: '500',
       marginTop: 18,
+
+  },
+  cityName: {
+    fontSize: 30,
+    fontWeight: "bold",
+    fontFamily: "san-sarif"
 
   }
 });

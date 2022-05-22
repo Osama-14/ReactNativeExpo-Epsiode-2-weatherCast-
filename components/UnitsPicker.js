@@ -23,6 +23,7 @@ export default function UnitsPicker({ unitsSystem, setUnitsSystem }) {
         <Picker.Item label="C°" value="metric" />
         <Picker.Item label="F°" value="imperial" />
       </Picker> */}
+      <Text style>WeatherCast</Text>
 
       {!isLabel ? (
         <TouchableOpacity
